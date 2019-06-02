@@ -12,7 +12,7 @@ def polls_list(request):
         "results": list(polls.values(
             "question",
             "created_by__username",
-            "pub_date"
+            "pub_date",
         ))
     }
     return JsonResponse(data)
